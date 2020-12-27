@@ -1,3 +1,4 @@
+#welcome to RNA and DNA sequencing built by Jayeskumar
 # Adenine (A), Thymine (T), Cytosine (C), Guanine (G), Uracil (U)
 # 
 # DNA complementary base pairing rule
