@@ -31,7 +31,7 @@ names(covid_sequence)[1] <- paste(names(covid_cDNA)[1], 'RNA sequence')
 # write_delim(data.frame(names(covid_sequence)), 'covid_sequence.txt', append = FALSE)
 
 for (j in 1:nrow(covid_cDNA)) {
-  comp_RNA <- ''                        # Make sure the comp_RNA is empty
+  comp_RNA <- ''                        
   temp_DNA <- covid_cDNA[j,]
   for(i in 1:nchar(temp_DNA)){
     curr_base <- substr(temp_DNA,i,i)
@@ -55,4 +55,4 @@ for (j in 1:nrow(covid_cDNA)) {
   covid_sequence[j,] <- comp_RNA
   write_delim(data.frame(comp_RNA), 'covid_sequence.txt', delim = " ", na = "NA", append = TRUE)
 }
-# ===============================================================================
+
