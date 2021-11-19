@@ -27,8 +27,7 @@ names(covid_sequence)[1] <- paste(names(covid_cDNA)[1], 'RNA sequence')
 
 
 
-#===== Retrive RNA from the cDNA Sequence ============================================
-# write_delim(data.frame(names(covid_sequence)), 'covid_sequence.txt', append = FALSE)
+
 
 for (j in 1:nrow(covid_cDNA)) {
   comp_RNA <- ''                        
